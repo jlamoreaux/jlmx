@@ -9,10 +9,10 @@ class Home extends React.Component {
           className={`mobile__nav__button ${this.props.status}`}
           onClick={this.props.toggleMenu}
         >
-          <span class="nav__button__inner"></span>
-          <span class="nav__button__inner"></span>
-          <span class="nav__button__inner"></span>
-          <span class="nav__button__inner"></span>
+          <span className="nav__button__inner"></span>
+          <span className="nav__button__inner"></span>
+          <span className="nav__button__inner"></span>
+          <span className="nav__button__inner"></span>
           Menu
         </button>
         <main className="page__content">
