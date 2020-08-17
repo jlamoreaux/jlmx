@@ -1,0 +1,43 @@
+@mixin respond-to($vp-size) {
+    @media only screen and (min-width: $vp-size) {
+        @content;
+    }
+}
+
+@mixin clean-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@mixin svg-link($size) {
+    height: $size;
+    width: $size;
+    display: flex;
+    overflow: hidden;
+
+    svg {
+        height: $size;
+        width: $size;
+    }
+}
+
+/*
+    Animations
+*/
+@keyframes hover-nav {
+    0% {transform: translateY(0);}
+    25% {transform: translateX(-200%);opacity: 0;}
+    // 26% {transform: translateX(-100%);opacity: 0;}
+    100% {transform: translate(-100%, 0);}
+}
+
+@keyframes bounce {
+    0%   { transform: scale(1,1)      translateY(0); }
+    10%  { transform: scale(1.1,.9)   translateY(0); }
+    30%  { transform: scale(.9,1.1)   translateY(-30px); }
+    50%  { transform: scale(1.05,.95) translateY(0); }
+    57%  { transform: scale(1,1)      translateY(-7px); }
+    64%  { transform: scale(1,1)      translateY(0); }
+    100% { transform: scale(1,1)      translateY(0); }
+}

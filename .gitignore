@@ -11,6 +11,9 @@
 # production
 /build
 
+# personal information
+/public/resume.pdf
+
 # misc
 .DS_Store
 .env.local
