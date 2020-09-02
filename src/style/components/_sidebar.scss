@@ -99,7 +99,8 @@
     transition: .5s;
     &.closed {
         opacity: 0;
-        transform: translateX(100%);
+        transform: translateX(-100%);
+        // display: none;
     }
     &.open {
         opacity: 1;
