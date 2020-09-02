@@ -1,4 +1,5 @@
 import React from 'react';
+import VisAware from './VisAware';
 
 class Resume extends React.Component {
     render() {

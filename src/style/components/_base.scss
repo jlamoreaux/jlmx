@@ -10,6 +10,13 @@ body {
     margin: 0;
     font-family: $primary-font;
 
+    a { 
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
 
     .page__title {
         font-size: 3em;
@@ -140,7 +147,11 @@ body {
             text-align: justify;
 
             .about__summary {
-                font-size: 1.2em;
+                // font-size: 1.2em;
+                p { margin-top: 15px; }
+                a {
+                    color: $ice-blue;
+                }
             }
         }
     }

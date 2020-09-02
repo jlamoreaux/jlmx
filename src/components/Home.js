@@ -1,10 +1,15 @@
 import React from 'react';
 import SVG from './SVG';
+import VisAware from './VisAware';
 
 class Home extends React.Component {
+  isScrolling() {
+    console.log(window.pageYOffset);
+  }
   render() {
     return (
       <div className="main page__section">
+        <VisAware />
         <button
           className={`mobile__nav__button ${this.props.status}`}
           onClick={this.props.toggleMenu}

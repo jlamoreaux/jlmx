@@ -116,6 +116,14 @@ body {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
 }
 
+body a {
+  text-decoration: none;
+}
+
+body a:hover {
+  text-decoration: underline;
+}
+
 body .page__title {
   font-size: 3em;
   font-style: italic;
@@ -288,8 +296,12 @@ body .page__title {
   text-align: justify;
 }
 
-.about .page__content .about__content .about__summary {
-  font-size: 1.2em;
+.about .page__content .about__content .about__summary p {
+  margin-top: 15px;
+}
+
+.about .page__content .about__content .about__summary a {
+  color: #A7EBF4;
 }
 
 .portfolio {

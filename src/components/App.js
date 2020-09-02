@@ -25,14 +25,18 @@ class App extends React.Component {
   };
 
   scrollPage = (event) => {
-    this.targetRef.scrollIntoView({
-      behavior: "smooth",
-    });
+    let pageHeight = window.innerHeight;
+    window.scrollBy(0, pageHeight);
+    console.log(window.pageYOffset);
   };
+
+  isScrolling= (event) => {
+    console.log(window.pageYOffset);
+  }
 
   render() {
     return (
-      <div className="jlmx">
+      <div className="jlmx" onChange={this.isScrolling}>
         <Sidebar nav={this.state.nav} status={this.state.menuStatus}></Sidebar>
         <Home
           headline="Hi, I'm Jordan!"
