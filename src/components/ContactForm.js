@@ -30,15 +30,23 @@ class ContactForm extends React.Component {
   };
 
     submitResponse = (event) => {
-        event.preventDefault();
+      event.preventDefault();
+      if (this.state.email === '') {
+        alert("Please enter an email address");
+      } else if (this.state.message === '') {
+        alert("Please add a message");
+      } else if (this.state.name === '') {
+        alert("Please enter a name");
+      } else {
         emailjs.sendForm('postmark', 'contact_form', event.target, process.env.REACT_APP_EMAILJS_ID)
-        .then((result) => {
+          .then((result) => {
             alert("Message Sent.");
             this.resetForm();
-        }, (error) => {
+          }, (error) => {
             console.error(error.text);
             alert("Sorry, the message failed to send. Please try again later.");
-        });
+          });
+      }
     };
     resetForm = () => {
         this.setState({name: '', email: '', message: ''})
