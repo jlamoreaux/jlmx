@@ -25,7 +25,7 @@ class About extends React.Component {
                                 I appreciate the value of critical thinking and using as many educational resources available to us as possible.
                             </p>
                             <p>
-                                When I’m not debugging code, I am spending time with <a href="http://penelopelamore.com">my wife</a> and my baby daughter.
+                                When I’m not debugging code, I am spending time with <a href="http://penelopelamore.com" target="_blank">my wife</a> and my baby daughter.
                             </p>
                         </article>
                     </section>
