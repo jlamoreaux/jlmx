@@ -12,7 +12,7 @@
 /build
 
 # personal information
-/public/resume.pdf
+# /public/resume.pdf
 
 # misc
 .DS_Store
