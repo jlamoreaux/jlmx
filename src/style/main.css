@@ -135,6 +135,12 @@ body .page__title {
   overflow: hidden;
 }
 
+@media only screen and (min-width: 768px) {
+  .jlmx {
+    padding-left: 120px;
+  }
+}
+
 .page__section {
   min-height: 100vh;
   display: -webkit-box;
@@ -229,6 +235,12 @@ body .page__title {
   width: 41px;
 }
 
+@media only screen and (min-width: 768px) {
+  .main .scroll {
+    left: calc(50% - 32.5px + 60px);
+  }
+}
+
 .main .scroll svg {
   fill: #ffffff;
   margin-top: 5px;
@@ -262,7 +274,7 @@ body .page__title {
   margin-top: 50px;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1024px) {
   .about .page__content {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -284,7 +296,7 @@ body .page__title {
   margin: 50px;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 768px) {
   .about .page__content .profile__photo__container .profile__photo {
     max-width: 300px;
   }
@@ -352,13 +364,13 @@ body .page__title {
           box-shadow: 5px 5px 10px;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 768px) {
   .portfolio .page__content .projects .project__card {
     max-width: 33%;
   }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 1024px) {
   .portfolio .page__content .projects .project__card {
     max-width: 25%;
   }
@@ -383,13 +395,20 @@ body .page__title {
 }
 
 .portfolio .page__content .projects .project__card.flipped {
-  -webkit-transform: rotateY(180deg) scale(2);
-          transform: rotateY(180deg) scale(2);
+  -webkit-transform: rotateY(180deg) scale(1.3);
+          transform: rotateY(180deg) scale(1.3);
   -webkit-box-shadow: -5px 5px 10px;
           box-shadow: -5px 5px 10px;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
   z-index: 4;
+}
+
+@media only screen and (min-width: 768px) {
+  .portfolio .page__content .projects .project__card.flipped {
+    -webkit-transform: rotateY(180deg) scale(2);
+            transform: rotateY(180deg) scale(2);
+  }
 }
 
 .portfolio .page__content .projects .project__card .card__front, .portfolio .page__content .projects .project__card .card__back {
@@ -439,17 +458,21 @@ body .page__title {
   z-index: 4;
   margin-bottom: 0;
   background-color: rgba(9, 18, 39, 0.85);
-  -webkit-transform: translateY(80%);
-          transform: translateY(80%);
   -webkit-transition: .5s;
   transition: .5s;
   height: 100%;
   color: #ffffff;
 }
 
-.portfolio .page__content .projects .project__card .project__description:hover {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+@media only screen and (min-width: 1024px) {
+  .portfolio .page__content .projects .project__card .project__description {
+    -webkit-transform: translateY(80%);
+            transform: translateY(80%);
+  }
+  .portfolio .page__content .projects .project__card .project__description:hover {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
 }
 
 .portfolio .page__content .projects .project__card .project__description .description__button {
@@ -511,12 +534,6 @@ body .page__title {
           transform: scale(1.1);
 }
 
-@media only screen and (min-width: 800px) {
-  .portfolio .page__content .page__title {
-    margin-left: 100px;
-  }
-}
-
 .resume {
   background-color: #ffffff;
   color: #091227;
@@ -554,7 +571,7 @@ body .page__title {
       justify-content: space-around;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 768px) {
   .contact .page__content {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: reverse;
@@ -659,7 +676,7 @@ body .page__title {
   top: 80px;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 768px) {
   .mobile__nav__button {
     display: none;
   }
@@ -751,7 +768,7 @@ body .page__title {
           justify-content: center;
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 768px) {
   .sidebar {
     position: fixed;
     height: 100%;
