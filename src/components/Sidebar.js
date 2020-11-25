@@ -16,7 +16,7 @@ class Header extends React.Component {
           <nav className={`sidebar ${this.props.status}`}>
             <ul className="nav__items clean__list">
               {nav.main.map((key) => (
-                <li className="nav__item" key={key} index={key}>
+                <li className="nav__item" key={key.name} index={key.name}>
                   <a href={`${key.link}`} className="nav__item__link">
                     <SVG fileName={key.name} />
                     {/* <img src={svgs[key]} alt={key} className="svg" /> */}

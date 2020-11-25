@@ -51,7 +51,7 @@ class App extends React.Component {
           ref={this.targetRef}
         />
         <Portfolio
-          title="The Cool Things I Have Built"
+          title="A Few Things I Have Built"
           projects={this.state.projects}
         ></Portfolio>
         {/* <Resume
